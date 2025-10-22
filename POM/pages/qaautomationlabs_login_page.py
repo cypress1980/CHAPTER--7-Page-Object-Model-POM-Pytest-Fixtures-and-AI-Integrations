@@ -9,8 +9,8 @@ class LoginPage:
         self.password_textbox = page.get_by_role("textbox", name="Password")
         self.login_button = page.get_by_role("button", name="Login")
         
-    def goto(self):
-        self.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    def goto(self,url):
+        self.page.goto(url)
          
     def enterUsername(self, username):
         self.username_textbox.click()
